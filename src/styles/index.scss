@@ -1,0 +1,19 @@
+@import './variables' ;
+.container {
+    max-width: 500px;
+    margin: auto;
+    height: 100vh;
+    background-color: white;
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+    width: 90%;
+}
+
+body {
+    height: 100vh;
+}
+#root{
+    background-color: gray;
+}

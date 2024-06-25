@@ -12,6 +12,7 @@
     "@types/react-dom": "^18.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
@@ -22,6 +23,7 @@
     "test": "jest",
     "prepare": "husky install",
     "coverage": "jest --coverage",
+    "format": "pritteir --write",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,8 +45,10 @@
     ]
   },
   "devDependencies": {
+    "heapdump": "^0.3.15",
     "husky": "^9.0.11",
     "jest-environment-jsdom": "^29.7.0",
+    "sass": "^1.77.6",
     "ts-jest": "^29.1.4"
   }
 }

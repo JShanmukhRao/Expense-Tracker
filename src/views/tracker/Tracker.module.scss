@@ -1,0 +1,50 @@
+.container{
+        position: relative;
+    height: 100%;
+    .wrapper{
+        overflow: auto;
+        height: 100%;
+    .trackerMeta{
+
+        height:300px;
+
+        .accountInfo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+    
+    }
+
+    .analytics{
+            height: 300px;
+    }
+
+    .transaction{
+        overflow: auto;
+        
+    }
+    .actionTab{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+    }
+    
+    .addIcon{
+         position: absolute;
+            height: 40px;
+            width: 40px;
+            right: 0;
+            bottom: 0;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 40px;
+    }
+
+    
+}

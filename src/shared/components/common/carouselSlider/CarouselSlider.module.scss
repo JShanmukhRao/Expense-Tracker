@@ -1,0 +1,80 @@
+@import '../../../../styles/variables'; // Import theme variables
+
+.carouselSlider {
+    margin: $spacing-medium;
+    border-radius: $border-radius;
+
+    .slidesContainer {
+        /* Styles for the container holding slides */
+        display: flex;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scroll-snap-type: x mandatory; /* Snap to each slide */
+        padding: $spacing-small;
+        .slide {
+            /* Styles for each individual slide */
+            // flex: 1 0 auto; /* Prevent slides from shrinking */
+            // width: 300px; /* Adjust width as needed */
+            scroll-snap-align: start; /* Snap alignment */
+                    min-width: 150px;
+            height: 150px;
+            border: 1px solid $border-color;
+            border-radius: $border-radius;
+            margin-right: $spacing-small;
+
+            .slideContent {
+                padding: $spacing-small;
+
+                h3 {
+                    margin-bottom: $spacing-small;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+
+                p {
+                    margin-bottom: 0;
+                    font-size: 1rem;
+                    color: $text-color;
+                }
+            }
+
+            img {
+                /* Styles for slide icon */
+                width: 100%;
+                height: auto;
+                display: block;
+                border-bottom: 1px solid $border-color;
+                padding: $spacing-small;
+            }
+        }
+    }
+
+    .controls {
+        /* Styles for navigation controls */
+        display: flex;
+        justify-content: space-between;
+        margin-top: $spacing-small;
+
+        .control {
+            /* Styles for control buttons */
+            background-color: $primary-color;
+            color: $white-color;
+            border: none;
+            padding: $spacing-small $spacing-medium;
+            cursor: pointer;
+            border-radius: $border-radius;
+
+            &.prev {
+                margin-right: $spacing-small;
+            }
+
+            &.next {
+                margin-left: $spacing-small;
+            }
+
+            &:hover {
+                /* Hover state for control buttons */
+                background-color: $primary-color-dark;
+            }
+        }
+    }
+}

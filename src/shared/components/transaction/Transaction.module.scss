@@ -1,0 +1,33 @@
+.transaction{
+    
+    height: 89px;
+    background-color: #91919F;
+    border-radius: 10px;
+    margin: 10px 0px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+
+      .icon {
+    margin-right: 10px;
+
+    img {
+      width: 40px; /* Adjust as per your design */
+      height: 40px; /* Adjust as per your design */
+      object-fit: contain; /* Ensures the image fits within the container */
+    }
+  }
+
+  .info {
+    flex: 1;
+
+    .category {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .description {
+      color: #666;
+    }
+  }
+}

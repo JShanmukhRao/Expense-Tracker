@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import { Route, Routes } from 'react-router-dom';
+import Home from './views/home/Home.view';
+import { BrowserRouter } from 'react-router-dom';
+import TrackerDetail from './views/tracker/TrackerDetail';
+import './styles/index.scss'
+import TransactionDetails from './views/transaction/TransactionDetail';
+import AddTransaction from './views/transaction/AddTransaction';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/tracker/:id" element={<TrackerDetail />} />
+          <Route path="/tracker/:id/transaction" element={<TransactionDetails />} />
+          <Route path="/tracker/:id/transaction/add" element={<AddTransaction />} />
+        </Routes>
+      </BrowserRouter>
+
     </div>
   );
 }

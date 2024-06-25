@@ -4,14 +4,15 @@ module.exports = {
 
     // Specify Jest's test environment (you may not need to change this)
     testEnvironment: 'jsdom',
-    collectCoverage: true,
+    collectCoverage: false,
     collectCoverageFrom: [
         'src/**/*.{ts,tsx}', // Include all TypeScript files in the src directory
         '!src/index.tsx', // Exclude specific files if necessary
         '!src/**/*.d.ts', // Exclude declaration files
+        '!src/reportWebVitals.ts',
     ],
     coverageDirectory: 'coverage',
-    coverageReporters: [ 'lcov','text','html'],
+    coverageReporters: [ 'lcov','text'],
     coverageThreshold: {
         global: {
             branches: 80,

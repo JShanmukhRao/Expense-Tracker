@@ -1,0 +1,64 @@
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+ text-decoration: none;
+    color: inherit;
+    &:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px);
+    }
+
+    &:active {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: translateY(0);
+    }
+}
+
+.cardLink {
+    text-decoration: none;
+    color: inherit; /* Ensure link color inherits from parent */
+}
+
+.cardTitle {
+    font-size: 1.75em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.cardDescription {
+    font-size: 1em;
+    margin-bottom: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.cardDate {
+    font-size: 0.875em;
+    color: #777;
+}
+
+.cardButton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+.cardFooter {
+    margin-top: 20px;
+    text-align: right;
+}

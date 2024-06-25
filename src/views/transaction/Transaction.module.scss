@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+.container{
+    margin-left:-$padding-left;
+    margin-right:-$padding-left;
+    .amountInfo{
+        height: 300px;
+        background-color: #FD3C4A;
+        padding: 10px 20px;
+        padding-top: 25%;
+
+        .text{
+            color: #FCFCFC;
+            font-size: 18px;
+            margin: 20px 0px;
+
+        }
+        .input{
+            font-size: 75px;
+            color: #FCFCFC;
+            input{
+            background: none;
+            border: none;
+            height: 78px;
+            line-height: 20px;
+            font-size: 75px;
+            color: #FCFCFC;
+            /* padding: 10px; */
+            box-sizing: border-box;
+            width: 80%;
+            
+            font-weight: 600;
+            outline: none;
+        }
+        }
+        
+    }
+
+    .transactionInfo{
+
+    }
+}
